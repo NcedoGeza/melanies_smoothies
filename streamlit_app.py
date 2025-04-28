@@ -3,6 +3,9 @@ import streamlit as st
 streamlit.title("My Parents New Healthy Diner")
 #from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark.functions import col
+import requests
+smoothiefroot_response = response.get("https://mysmoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_reponse)
 
 # Write directly to the app
 st.title(f":cup_with_straw: Customize Your Smoothie :cup_with_straw:")
